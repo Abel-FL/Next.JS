@@ -53,7 +53,7 @@ const Home = () => {
   // Efecto para cargar personajes al inicio
   useEffect(() => {
     fetchCharacters();
-  }, []);
+  }, [fetchCharacters]);
 
   return (
     <div className="p-6">

@@ -1,13 +1,10 @@
 import React from "react";
+import Image from "next/image";
 
 const CharacterCard = ({ character, onDelete }) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-4">
-      <img
-        className="w-full rounded-md"
-        src={character.image}
-        alt={character.name}
-      />
+      <Image src={image} alt={name} width={300} height={300} />
       <h3 className="font-bold text-xl mt-2">{character.name}</h3>
       <p className="text-gray-600">{character.species}</p>
       <button
